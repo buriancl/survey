@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="survey-card">
+      <div class="survey-interior">
+        <p class="survey-instructions">
+          Before we get started, we'd like to ask a few questions to better
+          understand your business needs.
+        </p>
+        <p class="project-type">What type of project are you hiring for?</p>
+        <form class="survey-form">
+          <div class="input-container">
+            <input
+              type="radio"
+              name="project-select"
+              id="new-project"
+              value="New project"
+            />
+            <span></span>
+            <label for="new-project">New project</label>
+          </div>
+          <div class="input-container">
+            <input
+              type="radio"
+              name="project-select"
+              id="existing-project"
+              value="Existing project"
+            />
+            <span></span>
+            <label for="existing-project">Existing project</label>
+          </div>
+          <div class="input-container">
+            <input
+              type="radio"
+              name="project-select"
+              id="ongoing"
+              value="Ongoing assistance or consultation"
+            />
+            <span></span>
+            <label for="ongoing">Ongoing assistance or consultation</label>
+          </div>
+          <div class="input-container">
+            <input
+              type="radio"
+              name="project-select"
+              id="None"
+              value="None of the above"
+            />
+            <span></span>
+            <label for="None">None of the above</label>
+          </div>
+
+          <button type="submit">Get started</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

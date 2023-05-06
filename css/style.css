@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #e9ebf5;
+  color: #101029;
+}
+
+.survey-card {
+  background: #fff;
+  width: 835px;
+  border-radius: 17px;
+  padding: 100px 187px 100px 100px;
+}
+.survey-card .survey-interior {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.survey-card .survey-interior .survey-instructions {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 54px;
+}
+.survey-card .survey-interior .project-type {
+  font-size: 22px;
+  margin-bottom: 46px;
+}
+.survey-card .survey-interior .survey-form {
+  display: flex;
+  flex-direction: column;
+}
+.survey-card .survey-interior .survey-form .input-container {
+  margin-bottom: 20px;
+}
+.survey-card .survey-interior .survey-form .input-container input[type=radio] {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: #a4a7ce;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #a4a7ce;
+  border-radius: 50%;
+  transform: translateY(8px);
+}
+.survey-card .survey-interior .survey-form .input-container input[type=radio]:checked {
+  background-color: #101029;
+  transform: scale(0.7) translateY(10px);
+}
+.survey-card .survey-interior .survey-form .input-container input[type=radio]:checked:after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: 1px solid #101029;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px;
+}
+.survey-card .survey-interior .survey-form .input-container label {
+  font-size: 18px;
+}
+.survey-card .survey-interior .survey-form button {
+  margin-top: 50px;
+  padding: 23px 34px 22px 78px;
+  border: none;
+  border-radius: 7px;
+  background: #101029;
+  color: #fff;
+  font-size: 18px;
+  transition: transform 200ms ease-out;
+}
+.survey-card .survey-interior .survey-form button:active {
+  transform: scale(0.9);
+}
